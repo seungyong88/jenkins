@@ -147,7 +147,7 @@ pipeline {
         }
 
         post {
-          success {
+          success { 
             mail to: 'seungyong@saltlux.com',
                  subject: "Deploy Success",
                  body: "Successfully deployed!"
