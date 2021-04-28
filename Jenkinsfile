@@ -23,7 +23,7 @@ pipeline {
 
                 git url: 'https://github.com/seungyong88/jenkins',
                     branch: 'master',
-                    credentialsId: 'tokenforjenkins'
+                    credentialsId: 'jenkins'
             }
 
             post {
