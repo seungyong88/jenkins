@@ -119,9 +119,9 @@ pipeline {
           echo 'Build Backend'
 
           dir ('./server'){
-              sh """
+              sh '''
               docker build . -t server
-              """
+              '''
           }
         }
 
@@ -148,7 +148,7 @@ pipeline {
 
         post {
           success {
-            mail to: 'frontalnh@gmail.com',
+            mail to: 'seungyong@saltlux.com',
                  subject: "Deploy Success",
                  body: "Successfully deployed!"
                 

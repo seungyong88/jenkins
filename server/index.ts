@@ -1,11 +1,12 @@
 import express from 'express'
 
 const app = express()
+const port = 80;
 
 app.get('', (req, res, next) => {
   res.send("zzzzzzzsadsdz1zzz")
 })
 
-app.listen(80, () => {
-  console.log('listening...')
+app.listen(port, () => {
+  console.log('listening...', port)
 })
